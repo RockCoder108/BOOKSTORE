@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "name": "Story Book",
+        "title": "A Journey Through Time",
+        "price": 0,
+        "category": "Free",
+        "image": "https://m.media-amazon.com/images/I/61r9yqOsX7L._SL1360_.jpg",
+        "description": "A captivating story that takes you on a journey through time, exploring the intricacies of human experience and the evolution of society. This book is a free offering to inspire and ignite the imagination of readers everywhere.",
+        "author": "John Doe",
+        "rating": 4.5
+    },
+    {
+        "id": 2,
+        "name": "Mystery Novel",
+        "title": "Secrets of the Shadows",
+        "price": 0,
+        "category": "Free",
+        "image": "https://i.harperapps.com/hcanz/covers/9780008737054/x293.jpg",
+        "description": "Dive into a world of intrigue and suspense with this mystery novel that keeps you guessing until the very end.",
+        "author": "Jane Smith",
+        "rating": 4.0
+    },
+    {
+        "id": 3,
+        "name": "Science Fiction",
+        "title": "Beyond the Stars",
+        "price": 0,
+        "category": "Free",
+        "image": "https://odcsales.gr/wp-content/uploads/2022/02/BEYOND-THE-STARS.jpg",
+        "description": "A thrilling science fiction adventure that takes you beyond the stars and into the unknown.",
+        "author": "Alice Johnson",
+        "rating": 4.8
+    },
+    {
+        "id": 4,
+        "name": "Fantasy Epic",
+        "title": "Legends of the Realm",
+        "price": 0,
+        "category": "Free",
+        "image": "https://m.media-amazon.com/images/I/51eDAldwlbL._SY445_SX342_ControlCacheEqualizer_.jpg",
+        "description": "An epic fantasy tale filled with magic, adventure, and legendary heroes.",
+        "author": "Robert Brown",
+        "rating": 4.7
+    },
+    {
+        "id": 5,
+        "name": "Romantic Novel",
+        "title": "Whispers of the Heart",
+        "price": 0,
+        "category": "Free",
+        "image": "https://m.media-amazon.com/images/I/51m+ZoU46wL._SY425_.jpg",
+        "description": "A heartwarming romantic novel that explores the depths of love and relationships.",
+        "author": "Emily White",
+        "rating": 4.6
+    },
+    {
+        "id": 6,
+        "name": "Historical Fiction",
+        "title": "Echoes of the Past",
+        "price": 0,
+        "category": "Free",
+        "image": "https://m.media-amazon.com/images/I/71bX74wrVvL._SY425_.jpg",
+        "description": "A historical fiction novel that brings the past to life through vivid storytelling and rich characters.",
+        "author": "Michael Green",
+        "rating": 4.3
+    },
+    {
+        "id": 7,
+        "name": "Thriller",
+        "title": "Chasing Shadows",
+        "price": 0,
+        "category": "Free",
+        "image": "https://m.media-amazon.com/images/I/41enn+xkgLL._SY445_SX342_ControlCacheEqualizer_.jpg",
+        "description": "A gripping thriller that keeps you on the edge of your seat with its twists and turns.",
+        "author": "Sarah Blue",
+        "rating": 4.9
+    },
+    {
+        "id": 8,
+        "name": "Self-Help",
+        "title": "Path to Success",
+        "price": 0,
+        "category": "Free",
+        "image": "https://m.media-amazon.com/images/I/41ljjWUweiL._SY445_SX342_ControlCacheEqualizer_.jpg",
+        "description": "A self-help book that provides practical advice and strategies for achieving success in life.",
+        "author": "David King",
+        "rating": 4.4
+    },
+    {
+        "id": 9,
+        "name": "Travel Guide",
+        "title": "Wanderlust Adventures",
+        "price": 0,
+        "category": "Free",
+        "image": "https://m.media-amazon.com/images/I/61FHu2tyPSL._SY466_.jpg",
+        "description": "A travel guide that takes you on adventures around the world, exploring cultures and landscapes.",
+        "author": "Chris Silver",
+        "rating": 4.1
+    }
+]

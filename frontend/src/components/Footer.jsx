@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <>
-      <hr className="border-base-300" />
+      <hr className="border-base-300 "/>
       <footer className="footer footer-center bg-base-200 text-base-content rounded p-10 flex flex-col items-center space-y-6">
         {/* Navigation Links */}
         <nav className="flex flex-wrap justify-center gap-4">
