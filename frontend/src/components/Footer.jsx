@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <>
       <hr className="border-base-300 "/>
-      <footer className="footer footer-center bg-base-200 text-base-content rounded p-10 flex flex-col items-center space-y-6">
+      <footer className="footer footer-center bg-base-200 text-base-content rounded p-10 flex flex-col items-center space-y-6 dark:bg-slate-600 dark:text-white">
         {/* Navigation Links */}
         <nav className="flex flex-wrap justify-center gap-4">
           <a href="#" className="link link-hover">

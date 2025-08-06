@@ -4,7 +4,7 @@ export default function Cards({item }) {
   return (
     <>
       <div className="mt-4 my-3 flex justify-center">
-        <div className="card bg-base-100 w-92 shadow-xl">
+        <div className="card bg-base-100 w-92 shadow-xl hover:scale-105 duration-300 dark:bg-slate-900 dark:text-white dark:border-slate-200">
           <figure>
             <img
               className="w-full h-125 object-cover rounded-t-lg"

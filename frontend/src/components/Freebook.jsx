@@ -46,18 +46,18 @@ export default function Freebook() {
   return (
     <>
       <div className="w-full mx-auto md:px-20">
-        <div >
+        <div>
           <h1 className="font-semibold text-xl pb-2 ">Free Offered Courses</h1>
           <p>
-            Samyhbverbv. wbviurbvi v vehrgbrv a vbgquibjv nvergb vn
-            febrqbvwkfve.
+            Explore a curated selection of free courses designed to spark your
+            curiosity and deepen your knowledge across various genres.
           </p>
         </div>
 
         <div>
           <Slider {...settings}>
             {filterBooks.map((book) => (
-                <Cards item = {book} key = {book.id} />
+              <Cards item={book} key={book.id} />
             ))}
           </Slider>
         </div>
