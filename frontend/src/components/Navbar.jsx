@@ -1,4 +1,6 @@
 import React from "react";
+import { useState, useEffect } from "react";
+
 
 function Navbar() {
   const navItems = (
@@ -17,10 +19,30 @@ function Navbar() {
       </li>
     </>
   );
+  const [sticky, setSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if(window.scrollY > 0){
+        setSticky(true);
+      }else{
+        setSticky(false);
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    }
+  },[sticky]);
   return (
     <>
-      <div className="max-w-screen-2xl container mx-auto md:px-20 px-4">
-        <div className="navbar bg-base-100 shadow-sm">
+      <div
+        className={`w-full mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 ${
+          sticky
+            ? "sticky-navbar shadow-md bg-base-200 duration-200 transition-all ease-in-out"
+            : ""
+        }`}
+      >
+        <div className="navbar  ">
           <div className="navbar-start">
             <div className="dropdown">
               <div
@@ -50,7 +72,7 @@ function Navbar() {
                 {navItems /* Mobile menu items */}
               </ul>
             </div>
-            <a className=" text-2xl font-bold cursor-pointer">Book Store</a>
+            <a className=" text-2xl font-bold cursor-pointer font-serif">BookStore</a>
           </div>
           <div className="navbar-end space-x-3">
             <div className="navbar-center hidden lg:flex">
@@ -59,8 +81,7 @@ function Navbar() {
               </ul>
             </div>
             <div className="hidden md:block">
-              <label
-                className="px-3 py-2 border border-gray-200 rounded-md flex items-center gap-2 bg-white hover:bg-gray-50 transition-colors duration-300">
+              <label className="px-3 py-2 border border-gray-200 rounded-md flex items-center gap-2 bg-white hover:bg-gray-50 transition-colors duration-300">
                 <input
                   type="text"
                   className="grow outline-none"
