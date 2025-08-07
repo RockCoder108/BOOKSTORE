@@ -1,14 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import Login from './Login';
+import { useForm } from "react-hook-form";
 
 export default function Signup() {
+  const {
+      register,
+      handleSubmit,
+      formState: { errors },
+    } = useForm();
+  
+    const onSubmit = (data) => console.log(data);
   return (
     <>
       <div className="flex h-screen items-center justify-center bg-base-200">
         <div className="w-full max-w-lg bg-base-100 shadow-lg rounded-lg p-8">
           <div className="">
-            <form method="dialog">
+            <form onSubmit={handleSubmit(onSubmit)} method="dialog">
               {/* if there is a button in form, it will close the modal */}
               <Link
                 to="/"
@@ -16,7 +24,7 @@ export default function Signup() {
               >
                 ✕
               </Link>
-            </form>
+            
             <h3 className="font-bold text-2xl text-center mb-6">SignUp</h3>
             <div className="mt-4 space-y-4">
               <span>Name</span>
@@ -25,7 +33,14 @@ export default function Signup() {
                 type="text"
                 placeholder="Fullname"
                 className="input input-bordered w-full max-w-xs mt-2 outline none"
+                {...register("Fullname", { required: true })}
               />
+              <br />
+              {errors.Fullname && (
+                <span className="text-sm text-red-500">
+                  This field is required
+                </span>
+              )}
             </div>
             {/* Form for Email */}
             <div className="mt-4 space-y-4">
@@ -35,7 +50,14 @@ export default function Signup() {
                 type="email"
                 placeholder="Email"
                 className="input input-bordered w-full max-w-xs mt-2 outline none"
+                {...register("email", { required: true })}
               />
+              <br />
+              {errors.email && (
+                <span className="text-sm text-red-500">
+                  This field is required
+                </span>
+              )}
             </div>
             {/* password */}
             <div className="mt-4 space-y-4">
@@ -45,7 +67,14 @@ export default function Signup() {
                 type="password"
                 placeholder="Password"
                 className="input input-bordered w-full max-w-xs mt-2 outline none"
+                {...register("password", { required: true })}
               />
+              <br />
+              {errors.password && (
+                <span className="text-sm text-red-500">
+                  This field is required
+                </span>
+              )}
             </div>
             <div className="flex justify-between items-center mt-6">
               <button className="bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700">
@@ -60,6 +89,7 @@ export default function Signup() {
                 <Login />
               </p>
             </div>
+            </form>
           </div>
         </div>
       </div>
