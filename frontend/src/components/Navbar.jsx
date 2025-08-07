@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import Login from "./Login";
 
 
 function Navbar() {
@@ -150,9 +151,11 @@ function Navbar() {
               </svg>
             </label>
             <div className="">
-              <a className="hover:bg-black hover:text-white text-black px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer dark:bg-slate-600 dark:text-white dark:hover:bg-slate-500">
+              <a className="hover:bg-black hover:text-white text-black px-3 py-2 rounded-md hover:bg-slate-800 duration-300 cursor-pointer dark:bg-slate-600 dark:text-white dark:hover:bg-slate-500"
+              onClick={() => document.getElementById("my_modal_3").showModal()}>
                 Login
               </a>
+              <Login />
             </div>
           </div>
         </div>
