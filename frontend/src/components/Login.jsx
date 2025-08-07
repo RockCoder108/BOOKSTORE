@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';  
 
 export default function Login() {
   return (
@@ -7,9 +8,9 @@ export default function Login() {
         <div className="modal-box ">
           <form method="dialog">
             {/* if there is a button in form, it will close the modal */}
-            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+            <Link to="/" className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
               ✕
-            </button>
+            </Link>
           </form>
           <h3 className="font-bold text-lg">Login</h3>
           {/* Form for Email */}
@@ -35,7 +36,7 @@ export default function Login() {
           <div className='flex justify-between items-center mt-6'> 
             <button className='bg-pink-500 text-white rounded-md px-3 py-1 hover:bg-pink-700'>Login</button>
             <p>Not registered? 
-                <span className='underline text-blue-500 cursor-pointer'>Sigup</span></p>
+                <Link to="/signup" className='underline text-blue-500 cursor-pointer'>Sigup</Link></p>
           </div>
         </div>
       </dialog>
